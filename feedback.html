@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Feedback</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { "primary": "#6e34ed", "background-light": "#f6f7f8", "background-dark": "#101922" },
+                    fontFamily: { "display": ["Inter"] },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200 font-display">
+        <div class="flex flex-col min-h-screen">
+            <header
+                class="bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-16">
+                        <a href="index.html" class="flex items-center gap-3">
+                            <div class="h-8 w-8 text-primary">
+                                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg font-bold text-gray-900 dark:text-white">Maria Vitória</h2>
+                        </a>
+                        <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+                        
+                        <nav class="menu hidden md:flex items-center gap-6 text-sm font-medium">
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                href="proficional.html">Sobre</a>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                href="habilidades.html">Habilidades</a>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                href="projetos.html">Projetos</a>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                href="feedback.html">Depoimentos</a>
+                            <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                                href="contato.html">Contato</a>
+                        </nav>
+                        <a class="hidden md:inline-flex items-center justify-center px-4 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary/90"
+                            href="#">
+                            Currículo
+                        </a>
+                    </div>
+                </div>
+            </header>
+        <main class="flex-grow">
+            <section class="py-16 sm:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                            Prova Social</h1>
+                        <p class="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Veja o que meus
+                            clientes e parceiros têm a dizer sobre meu trabalho e nossa colaboração.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div
+                            class="bg-white dark:bg-background-dark border border-gray-200 dark:border-gray-800 rounded-lg p-6 flex flex-col">
+                            <div class="flex items-center mb-4">
+                                <img alt="Foto de Ana Carolina" class="w-12 h-12 rounded-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkyrODlNrSLOGv3EbFsfaaNWyK9SCavcElj94TRx1Gt8lqGSsIMbb7Og2Nl3BMvIj1sD8KLo7tn2n82njkjts-u5KVb5C8eqnmEXhLozCTYWhpOZG7K4H32qcnyrcWynv5MV6rVxESHj4nPI1Z3jPVPfkOUJbLUxvWcVwqFpPcbNHYwyi0OEpK94tzMY7e0NHFo_rm_9VKdXOhn1-bcO10UvIQ60RNn8azPEPL8-lKY88csvnHQEQWlyyrXS-MfCR_IDTgGYqkEz3C" />
+                                <div class="ml-4">
+                                    <h3 class="font-bold text-gray-900 dark:text-white">Pedro Tavares</h3>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">Estudante do SENAC</p>
+                                </div>
+                            </div>
+                            <blockquote class="text-gray-600 dark:text-gray-300 flex-grow">
+                                <p>"É um prazer recomendar e reconhecer o trabalho de Mavihh. Ela é uma profissional extremamente dedicada e esforçada, cuja
+                                responsabilidade com os projetos é evidente em sua pontualidade e na qualidade de suas entregas. Sua postura de líder
+                                nata contribui significativamente para o sucesso e a motivação de toda a equipe. Uma colega exemplar."</p>
+                            </blockquote>
+                        </div>
+                        <div
+                            class="bg-white dark:bg-background-dark border border-gray-200 dark:border-gray-800 rounded-lg p-6 flex flex-col">
+                            <div class="flex items-center mb-4">
+                                <img alt="Foto de Ricardo Almeida" class="w-12 h-12 rounded-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkJVUwFpR6weKJGz2Ehn6rEw1DmIaDTWpjKNVYTqCUNLCoz2ADx4Z7zfl5vQGtRqpFFpQoYi8tjUC0Z_hoWqW6M_WPNxnhGhB3kshLE-XytXsDo9IUnsB4GAvBU57LprOEbNP55RTX7f6LHlxgIk2qd8aXmG20iNpxvRy7Q21gJ6fIkw37lFXDWW5QrPNLNeGy8-heGY3nOK6dd0m6G-piNALYjakN46QIS96gsbrzzp7cpDby8FTrJwT4x9ytKFzZTvgKp2DMvMFI" />
+                                <div class="ml-4">
+                                    <h3 class="font-bold text-gray-900 dark:text-white">Ricardo Almeida</h3>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">Gerente de Produto, Soluções
+                                        Criativas</p>
+                                </div>
+                            </div>
+                            <blockquote class="text-gray-600 dark:text-gray-300 flex-grow">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                            </blockquote>
+                        </div>
+                        <div
+                            class="bg-white dark:bg-background-dark border border-gray-200 dark:border-gray-800 rounded-lg p-6 flex flex-col">
+                            <div class="flex items-center mb-4">
+                                <img alt="Foto de Juliana Costa" class="w-12 h-12 rounded-full object-cover"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsbzeQuKe1BOogOFYlA2ZeltRgMb-COV_SCNDyJH7CpyK3h-8nFR_7_Ahf4ydI8YW-bR31tk_JSc4uHL6bKEMFyWb0QJt9Nmcknp909bTh1dzilkHMbMPgPH3qaqvupQbMQg_HzEbX8jxCjquK0GGsFWT4dFW5zIbmWAMLuZk6I9Vj4vrkhPaWOM-c-PUw6WdWxs47T6El5IlV99C42iyz2GGtAV9Bmj4S581G9zImhZ9lqJC5kv8gFj16WWUaYTutmOpBShS3hRjV" />
+                                <div class="ml-4">
+                                    <h3 class="font-bold text-gray-900 dark:text-white">Juliana Costa</h3>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">Diretora de Arte, Estúdio
+                                        Visionário</p>
+                                </div>
+                            </div>
+                            <blockquote class="text-gray-600 dark:text-gray-300 flex-grow">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        
+    </div>
+        <script>
+            const toggle = document.querySelector(".menu-toggle"); const menu = document.querySelector(".menu");
+            toggle.addEventListener("click", () => menu.classList.toggle("active"));
+        </script>
+</body>
+
+</html>

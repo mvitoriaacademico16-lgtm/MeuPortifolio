@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Proficional</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { "primary": "#6e34ed", "background-light": "#f6f7f8", "background-dark": "#101922" },
+                    fontFamily: { "display": ["Inter"] },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+        <div class="flex flex-col min-h-screen">
+            <header
+                class="bg-background-light dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between h-16">
+                        <a href="index.html" class="flex items-center gap-3">
+                            <div class="h-8 w-8 text-primary">
+                                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg font-bold text-gray-900 dark:text-white">Maria Vitória</h2>
+                        </a>
+                    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+                    <nav class="menu hidden md:flex items-center gap-6 text-sm font-medium">
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                            href="proficional.html">Sobre</a>
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                            href="habilidades.html">Habilidades</a>
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                            href="projetos.html">Projetos</a>
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                            href="feedback.html">Depoimentos</a>
+                        <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary"
+                            href="contato.html">Contato</a>
+                    </nav>
+                        <a class="hidden md:inline-flex items-center justify-center px-4 py-2 text-sm font-bold text-white bg-primary rounded-lg hover:bg-primary/90"
+                            href="#">
+                            Currículo
+                        </a>
+                    </div>
+                </div>
+            </header>
+    <main class="flex items-center justify-center min-h-screen p-4 sm:p-6 md:p-8">
+        <div class="w-full max-w-4xl mx-auto">
+            <div
+                class="flex flex-col md:flex-row items-center gap-8 bg-white dark:bg-background-dark/50 p-8 md:p-12 rounded-xl shadow-lg">
+                <div class="flex-shrink-0">
+                    <img alt="Foto de Maria Vitória"
+                        class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary/20 dark:border-primary/40"
+                        src="imagens/mavi3.jpg " />
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">Maria Vitória Barcelos
+                        Barbosa</h1>
+                    <p class="text-lg md:text-xl text-primary font-medium">Desenvolvedora Web</p>
+                    <p class="text-base text-gray-600 dark:text-gray-300 max-w-lg">
+                        Olá! Tenho 18 anos e sou apaixonada por tecnologia e design, sempre buscando transformar ideias
+                        em soluções criativas e funcionais.
+                        Estudo no ensino médio na <b>Escola Godofredo Schneider</b>, em Vila Velha, e faço o técnico em
+                        <b>Informática para Internet</b> no Senac Vitória.
+                    </p>
+                    <p class="text-base text-gray-600 dark:text-gray-300 max-w-lg">
+                        Tenho como pontos fortes a dedicação, curiosidade e vontade constante de aprender.
+                        Além da área técnica, também me envolvo em projetos educacionais e sociais, atuando em papéis de
+                        liderança e monitoria.
+                        Meu objetivo é crescer profissionalmente na área de tecnologia, sempre buscando novos desafios e
+                        evolução pessoal.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const toggle = document.querySelector(".menu-toggle"); const menu = document.querySelector(".menu");
+            toggle.addEventListener("click", () => menu.classList.toggle("active"));
+    </script>
+</body>
+
+</html>
